@@ -1,0 +1,53 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.log
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.ipynb_checkpoints
+yolov5/.venv/
+
+# Data & results (ignore everything except raw folder)
+data/interim/**
+data/yolo/**
+results/**
+yolov5/runs/**
+runs/**
+data/raw/*
+
+# Raw data folder (empty in repo, users put their own videos here)
+!data/raw/.gitkeep
+
+# Model weights & large binaries
+*.pt
+*.onnx
+*.ckpt
+
+# Video & image inputs (only inside data/, not global)
+data/**/*.mp4
+data/**/*.avi
+data/**/*.mov
+data/**/*.mkv
+data/**/*.jpg
+data/**/*.jpeg
+data/**/*.png
+data/**/*.bmp
+
+# VSCode / IDE
+.vscode/
+.idea/
+*.swp

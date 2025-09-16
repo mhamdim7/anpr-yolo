@@ -1,0 +1,4 @@
+train: /Users/mhamdi/DEV/anpr-yolo/data/yolo/images/train
+val:   /Users/mhamdi/DEV/anpr-yolo/data/yolo/images/val
+nc: 1
+names: ['license-plate']
