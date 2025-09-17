@@ -1,10 +1,12 @@
-# ANPR-YOLO (Route25 R&D)
+# ANPR-YOLO
 
-This repository is part of the **Route25 WP2 R&D activities**.  
-The goal is to explore **vehicle and license plate detection (Automatic Number Plate Recognition – ANPR)** using YOLOv5.  
+This repository provides a **reproducible pipeline for training YOLOv5 models** on custom object detection tasks.  
 
-We integrate YOLOv5 as a **submodule** and add our own dataset preparation scripts, configs, and results.  
-This work supports the Route25 mission of advancing intelligent, connected, and AI-driven mobility solutions.
+It integrates YOLOv5 as a **submodule** and adds dataset preparation scripts, configs, and helpers to go from:  
+raw videos → frame extraction → manual annotation → YOLO training → inference.  
+
+Although this repo demonstrates the workflow with **Automatic Number Plate Recognition (ANPR)** as an example,  
+the same pipeline can be used for **any object detection class** (e.g., helmets, traffic signs, people, cars).
 
 ------------------------------------------------------------
 
@@ -107,11 +109,13 @@ Options:
 
 ------------------------------------------------------------
 
-## 📑 Deliverables
+## 📑 Example Deliverables (ANPR)
 
-- A trained YOLO model for license plate detection (`best.pt`)  
-- Annotated results (images/videos with bounding boxes for cars + plates)  
-- Report (3–4 pages) with steps, datasets, screenshots, and findings
+As demonstrated in the license plate recognition example, typical outputs include:
+
+- A trained YOLO model (`best.pt`)  
+- Annotated results (images/videos with bounding boxes)  
+- A short report or notebook describing steps, datasets, screenshots, and findings
 
 ------------------------------------------------------------
 
